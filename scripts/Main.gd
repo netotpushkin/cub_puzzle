@@ -5,10 +5,17 @@ extends Node2D
 func _ready():
 	# Создаём GridContainer через скрипт
 	grid = GridContainer.new()
-	grid.columns = 3  # например, 3 колонки
+	grid.columns = 3  # Количество колонок
+	grid.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	grid.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	add_child(grid)
-	
-	# Теперь можно добавлять кнопки с картинками
+
+	# Получаем размер экрана
+	var screen_size = get_viewport_rect().size
+	var columns = grid.columns
+	var btn_size = Vector2(screen_size.x / columns - 20, screen_size.x / columns - 20)
+
+	# Загружаем картинки из папки
 	var dir = DirAccess.open("res://assets/images")
 	if dir:
 		dir.list_dir_begin()
@@ -18,7 +25,8 @@ func _ready():
 				var tex = load("res://assets/images/" + file_name)
 				var btn = TextureButton.new()
 				btn.texture_normal = tex
-				btn.rect_min_size = Vector2(150,150)
+				btn.custom_minimum_size = btn_size
+				btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
 				btn.pressed.connect(Callable(self, "_on_image_selected").bind(file_name))
 				grid.add_child(btn)
 			file_name = dir.get_next()
