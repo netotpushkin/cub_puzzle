@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://emcm6o7w3j66"]
+
+[ext_resource type="Script" uid="uid://egepcwnj3b3j" path="res://scripts/Puzzle.gd" id="1_5its8"]
+[ext_resource type="PackedScene" uid="uid://2q13y8krq4bj" path="res://scenes/Main.tscn" id="2_rypjj"]
+
+[node name="Puzzle" type="Node2D"]
+script = ExtResource("1_5its8")
+
+[node name="Main" parent="." instance=ExtResource("2_rypjj")]
