@@ -1,8 +1,14 @@
-extends Control
+extends Node2D
 
-@onready var grid: GridContainer = $GridContainer
+@onready var grid: GridContainer = null
 
 func _ready():
+	# Создаём GridContainer через скрипт
+	grid = GridContainer.new()
+	grid.columns = 3  # например, 3 колонки
+	add_child(grid)
+	
+	# Теперь можно добавлять кнопки с картинками
 	var dir = DirAccess.open("res://assets/images")
 	if dir:
 		dir.list_dir_begin()
@@ -12,7 +18,7 @@ func _ready():
 				var tex = load("res://assets/images/" + file_name)
 				var btn = TextureButton.new()
 				btn.texture_normal = tex
-				btn.rect_min_size = Vector2(150,150)	# размер кнопки выбора
+				btn.rect_min_size = Vector2(150,150)
 				btn.pressed.connect(Callable(self, "_on_image_selected").bind(file_name))
 				grid.add_child(btn)
 			file_name = dir.get_next()

@@ -1,4 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755361556
+::res://::1755363397
 icon.svg::CompressedTexture2D::6833488113791230569::1755361552::1755361557::1::::<><><>0<>0<>118aaee1c7636196bfd7f029fd04c6e2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-index.md::TextFile::-1::1755361026::0::1::::<><><>0<>0<><>::
+index.md::TextFile::-1::1755363711::0::1::::<><><>0<>0<><>::
+::res://assets/::1755362672
+::res://assets/images/::1755364003
+1.png::CompressedTexture2D::3810441630555909855::1755363993::1755364008::1::::<><><>0<>0<>81eda2d0a2c21926cadd32e82ce1cca9<>res://.godot/imported/1.png-1ee80ed34f3e155b7765b27be58a0fb2.ctex::
+2.jpg::CompressedTexture2D::92734466460162103::1755363944::1755364008::1::::<><><>0<>0<>b7be55fc64e141e902b305127cdf8d93<>res://.godot/imported/2.jpg-7b680a9ba0eabf9316d0bada1b7d31c5.ctex::
+::res://scenes/::1755363784
+Main.tscn::PackedScene::1929758778349779503::1755363784::0::1::::<><><>0<>0<><>::uid://ddvxbgwgh645c::::res://scripts/Main.gd
+Puzzle.tscn::PackedScene::305672422448799777::1755363398::0::1::::<><><>0<>0<><>::uid://egepcwnj3b3j::::res://scripts/Puzzle.gd<>uid://2q13y8krq4bj::::res://scenes/Main.tscn
+::res://scripts/::1755363784
+Main.gd::GDScript::7414579140865207066::1755363398::0::1::::<>Control<><>0<>0<><>::
+Puzzle.gd::GDScript::293411435592315093::1755363784::0::1::::<>Control<><>0<>0<><>::

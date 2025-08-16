@@ -13,5 +13,5 @@ res://
     images/
 
 ## Ссылки на файлы проекта с кодом
-- [Main.gd](https://raw.githubusercontent.com/netotpushkin/cub_puzzle/master/Main.gd)
-- [Puzzle.gd](https://raw.githubusercontent.com/netotpushkin/cub_puzzle/master/Puzzle.gd)
+- [Main.gd](https://raw.githubusercontent.com/netotpushkin/cub_puzzle/master/scripts/Main.gd)
+- [Puzzle.gd](https://raw.githubusercontent.com/netotpushkin/cub_puzzle/master/scripts/Puzzle.gd)
